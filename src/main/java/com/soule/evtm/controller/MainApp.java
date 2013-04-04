@@ -13,6 +13,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import com.soule.evtm.dao.ContactDao;
+
 public class MainApp  {
 
     private static final Logger log = LoggerFactory.getLogger(MainApp.class);
@@ -20,7 +22,10 @@ public class MainApp  {
     public static void main(String[] args) throws Exception {
       ApplicationContext ctx = new ClassPathXmlApplicationContext("/configuration/beans/AppConfig.xml");
     	ClassLoader cl = ClassLoader.getSystemClassLoader();
-    	 
+    	
+    	ContactDao dao = ctx.getBean("contactDao",ContactDao.class);
+    	dao.findAll();
+    	
         URL[] urls = ((URLClassLoader)cl).getURLs();
  
         for(URL url: urls){

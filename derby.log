@@ -1,0 +1,10 @@
+----------------------------------------------------------------
+Wed Apr 03 21:44:02 IST 2013:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.9.1.0 - (1344872): instance a816c00e-013d-d0ad-2b53-00000398f170 
+on database directory /Users/tejas/Documents/development/databse/eventdb  with class loader sun.misc.Launcher$AppClassLoader@5b8ad9a0 
+Loaded from file:/Users/tejas/Documents/development/databse/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.7.0_17-b02
+user.dir=/Users/tejas/development/java/projects/eventlist/eventlist
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

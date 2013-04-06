@@ -1,2 +1,4 @@
 eventlist
 =========
+
+Event List Application

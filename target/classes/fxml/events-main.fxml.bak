@@ -1,33 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import java.lang.*?>
+<?import java.net.*?>
 <?import java.util.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.paint.*?>
 
-<AnchorPane id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="730.0" prefWidth="1043.0" style="#background {&#10;    -fx-padding: 15;&#10;    -fx-spacing: 10;&#10;    -light-black: rgb(74, 75, 78);&#10;    -dark-highlight: rgb(87, 89, 92);&#10;    -dark-black: rgb(39, 40, 40);&#10;    -darkest-black: rgb(5, 5, 5);&#10;    -mid-gray: rgb(216, 222, 227);&#10;    -fx-background-color: #87ceeb;&#10;}" xmlns:fx="http://javafx.com/fxml">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="730.0" prefWidth="1043.0" styleClass="background" xmlns:fx="http://javafx.com/fxml">
   <children>
-    <SplitPane dividerPositions="0.29586935638808837" focusTraversable="true" maxWidth="123.0" prefHeight="477.9999000000025" prefWidth="788.0" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="95.0">
+    <SplitPane dividerPositions="0.2968299711815562" focusTraversable="true" maxWidth="123.0" prefHeight="477.9999000000025" prefWidth="788.0" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="95.0">
       <items>
-        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="475.0" prefWidth="254.0">
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="475.0" prefWidth="254.0" styleClass="anchorPane">
           <children>
-            <TreeView id="treeView" prefHeight="573.0" prefWidth="168.0" style="#treeView{&#10; -light-black: rgb(74, 75, 78);&#10;    -dark-highlight: rgb(87, 89, 92);&#10;    -dark-black: rgb(39, 40, 40);&#10;    -darkest-black: rgb(5, 5, 5);&#10;    -mid-gray: rgb(216, 222, 227);&#10;    -fx-background-color: #87ceeb;&#10;}" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <TreeView id="treeView" prefHeight="573.0" prefWidth="168.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
             <ToolBar id="eventBar" maxWidth="123.0" prefHeight="30.0" prefWidth="165.0" style="#eventBar{&#10; -light-black: rgb(74, 75, 78);&#10;    -dark-highlight: rgb(87, 89, 92);&#10;    -dark-black: rgb(39, 40, 40);&#10;    -darkest-black: rgb(5, 5, 5);&#10;    -mid-gray: rgb(216, 222, 227);&#10;-fx-background-color: #1d1d1d;&#10;-fx-background-insets: 0, 0 0 1 0;&#10;    -fx-padding: .9em 0.416667em .9em 0.416667em;&#10;    -fx-effect: dropshadow(two-pass-box,black,5,.2,0,0);&#10;}" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
           </children>
         </AnchorPane>
-        <AnchorPane minHeight="0.0" minWidth="0.0" mouseTransparent="true" prefHeight="476.0" prefWidth="556.0">
+        <AnchorPane minHeight="0.0" minWidth="0.0" mouseTransparent="true" prefHeight="476.0" prefWidth="556.0" styleClass="anchorPane">
           <children>
             <ToolBar id="eventDetailBar" maxWidth="123.0" prefHeight="30.0" prefWidth="123.0" style="#eventDetailBar{&#10; -light-black: rgb(74, 75, 78);&#10;    -dark-highlight: rgb(87, 89, 92);&#10;    -dark-black: rgb(39, 40, 40);&#10;    -darkest-black: rgb(5, 5, 5);&#10;    -mid-gray: rgb(216, 222, 227);&#10;-fx-background-color: #1d1d1d;&#10;-fx-background-insets: 0, 0 0 1 0;&#10;    -fx-padding: .9em 0.416667em .9em 0.416667em;&#10;    -fx-effect: dropshadow(two-pass-box,black,5,.2,0,0);&#10;}" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
           </children>
         </AnchorPane>
       </items>
     </SplitPane>
-    <ImageView id="New Logo" layoutX="14.0" layoutY="29.0" pickOnBounds="true">
-      <image>
-        <Image url="@New%20Logo.png" preserveRatio="true" smooth="true" />
-      </image>
-    </ImageView>
   </children>
+  <stylesheets>
+    <URL value="@styles.css" />
+  </stylesheets>
 </AnchorPane>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="525.0" prefWidth="600.0000999999975" styleClass="background" xmlns:fx="http://javafx.com/fxml">
+  <children>
+    <AnchorPane prefHeight="398.0" prefWidth="600.0001220703125" styleClass="top-segment">
+      <stylesheets>
+        <URL value="@loginstyle.css" />
+      </stylesheets>
+    </AnchorPane>
+  </children>
+  <stylesheets>
+    <URL value="@loginstyle.css" />
+  </stylesheets>
+</AnchorPane>

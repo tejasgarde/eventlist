@@ -8,22 +8,22 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.paint.*?>
 
-<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="698.0000999999975" styleClass="background" xmlns:fx="http://javafx.com/fxml">
+<AnchorPane id="AnchorPane" prefHeight="740.0" prefWidth="1050.0" styleClass="background" xmlns:fx="http://javafx.com/fxml" fx:controller="com.soule.evtm.controller.LoginController">
   <children>
-    <AnchorPane prefHeight="402.0" prefWidth="698.0001220703125" styleClass="top-pane">
+    <AnchorPane layoutX="1.0" layoutY="1.0" prefHeight="476.0" prefWidth="1050.0" styleClass="top-pane">
       <children>
-        <Button layoutX="138.0" layoutY="306.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="380.0" text="Login" />
+        <Button layoutX="335.0" layoutY="320.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="68.0" prefWidth="380.0" text="Login" />
       </children>
     </AnchorPane>
-    <VBox id="VBox" alignment="CENTER" layoutX="124.0" layoutY="43.0" spacing="5.0">
+    <VBox id="VBox" alignment="CENTER" layoutX="309.0" layoutY="43.0" spacing="5.0">
       <children>
         <AnchorPane prefHeight="290.0" prefWidth="433.0">
           <children>
-            <Label layoutX="16.0" layoutY="91.0" prefWidth="85.0" text="User Name" />
-            <TextField layoutX="16.0" layoutY="123.0" prefWidth="380.0" />
-            <Label layoutX="14.0" layoutY="161.0" prefWidth="85.0" text="Password" />
-            <PasswordField layoutX="17.0" layoutY="196.0" prefWidth="380.0" />
-            <ImageView id="Title" layoutX="-7.0" layoutY="36.0" pickOnBounds="true">
+            <Label fx:id="userEmail" layoutX="16.0" layoutY="91.0" prefWidth="85.0" text="User Name" />
+            <TextField fx:id="txtUserEmail" layoutX="27.0" layoutY="123.0" prefWidth="380.0" />
+            <Label fx:id="userPassword" layoutX="14.0" layoutY="161.0" prefWidth="85.0" text="Password" />
+            <PasswordField fx:id="txtUserPassword" layoutX="27.0" layoutY="196.0" prefWidth="380.0" />
+            <ImageView id="Title" layoutX="-3.0" layoutY="14.0" pickOnBounds="true">
               <image>
                 <Image url="@Title.png" preserveRatio="true" smooth="true" />
               </image>
@@ -32,9 +32,9 @@
         </AnchorPane>
       </children>
     </VBox>
-    <Button layoutX="141.0" layoutY="442.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="380.0" text="Register" />
-    <Label layoutX="138.0" layoutY="413.0" prefWidth="256.0" text="Not Yet a User ?" />
-    <Label layoutX="543.0" layoutY="518.0" prefWidth="156.0" text="© Soule India Pvt. Ltd" />
+    <Button layoutX="338.0" layoutY="583.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="380.0" text="Register" />
+    <Label layoutX="326.0" layoutY="540.0" prefWidth="256.0" text="Not Yet a User ?" />
+    <Label layoutX="880.0" layoutY="709.0" prefWidth="156.0" text="© Soule India Pvt. Ltd" />
   </children>
   <stylesheets>
     <URL value="@loginstyle.css" />

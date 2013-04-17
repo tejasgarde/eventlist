@@ -4,6 +4,7 @@ import java.net.URL;
 import java.net.URLClassLoader;
 
 import javafx.application.Application;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -26,6 +27,7 @@ public class MainApp extends Application {
     
     private Stage primaryStage;
     private BorderPane rootLayout;
+    public boolean isUserLoggedIn = false;
     public static void main(String[] args) throws Exception {
     	
     	launch(args);
@@ -61,20 +63,48 @@ public class MainApp extends Application {
 		} catch (Exception e) {
 			// TODO: handle exception
 		}
-        loadApplication();
+        loadLoginPage();
+        
     }
     
-    private void loadApplication(){
+    public void loadApplication(){
     	String fxmlFile = "/fxml/events-main.fxml";
     	try {
 			FXMLLoader loader = new FXMLLoader(Main.class.getResource(fxmlFile));
 			AnchorPane mainAppPane = (AnchorPane)loader.load();
 			rootLayout.setCenter(mainAppPane);
-			rootLayout.setBottom(null);
-			rootLayout.setLeft(null);
-			rootLayout.setRight(null);
+			
 		} catch (Exception e) {
 			// TODO: handle exception
 		}
     }
+    
+    private void loadLoginPage(){
+    	String fxmlFile = "/fxml/login/Login.fxml";
+    	
+    	try {
+    		FXMLLoader loader = new FXMLLoader(Main.class.getResource(fxmlFile));
+			AnchorPane mainAppPane = (AnchorPane)loader.load();
+			LoginController controller = loader.getController();
+			controller.setMainApp(this);
+			rootLayout.setCenter(mainAppPane);
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+    }
+
+
+
+	public boolean isUserLoggedIn() {
+		return isUserLoggedIn;
+	}
+
+
+
+	public void setUserLoggedIn(boolean isUserLoggedIn) {
+		this.isUserLoggedIn = isUserLoggedIn;
+	}
+    
+    
 }

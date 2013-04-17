@@ -12,7 +12,7 @@
   <children>
     <AnchorPane layoutX="1.0" layoutY="1.0" prefHeight="476.0" prefWidth="1050.0" styleClass="top-pane">
       <children>
-        <Button layoutX="335.0" layoutY="320.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="68.0" prefWidth="380.0" text="Login" />
+        <Button layoutX="335.0" layoutY="320.0" mnemonicParsing="false" onAction="handleLogin" prefHeight="68.0" prefWidth="380.0" text="Login" />
       </children>
     </AnchorPane>
     <VBox id="VBox" alignment="CENTER" layoutX="309.0" layoutY="43.0" spacing="5.0">
